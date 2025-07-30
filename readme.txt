@@ -3,7 +3,7 @@
 　　　　　　One Chip Board「メスイサ」復刻版
 ～～～～～～～～～～～～～～～～～～～～～～～～～
 
-One Chip Board「メスイサ」復刻版は当時一世を風靡したあのメスイサ(MeSX)を【唯一無二の俺仕様】で復刻した新感覚の8ビットOne Chip Boardです。
+One Chip Board「メスイサ」復刻版は当時一世を風靡したあのメスイサ(MeSX)を【唯一無二の俺仕様🔥】で復刻した新感覚の8ビットOne Chip Boardです。
 
 One Chip Board「メスイサ」復刻版仕様
 

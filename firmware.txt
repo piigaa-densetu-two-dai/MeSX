@@ -1,0 +1,32 @@
+ファームウェアインストール方法
+
+1. MSXのシステムROMファイル(サイズが32kバイトのもの)を用意します。
+
+ここでは例としてファイル名をBIOS.ROMとします
+
+2. MeSX.binファイルの後ろに1のファイルを連結します。
+
+unixのcatコマンドを使用する例
+$ cat MeSX.bin BIOS.ROM > firmware.bin
+
+windowsのcopyコマンドを使用する例
+>copy /b MeSX.bin + BIOS.ROM firmware.bin
+
+3. uf2conv.exeを用いて2で作成したfirmware.binをuf2ファイルに変換します。
+
+例: windowsコマンドプロンプト上で
+uf2conv.exe firmware.bin firmware.uf2
+
+uf2conv.exeはhttps://github.com/piigaa-densetu-two-dai/MSXpi_plus_plus_plus_plus_plus_plus_plusにあります。
+
+4. RP2350ボードをブートモードでPCに接続します。
+
+RP2350ボードのBOOTボタンを押しながらPCとUSB接続して下さい。
+接続が成功するとドライブが認識されます。
+
+5. RP2350ボードに3で作成したfirmware.uf2ファイルを書き込みします。
+
+4で認識されたドライブにfirmware.uf2をドラッグアンドドロップ(コピー)します。
+コピーが完了するとドライブが見えなくなります。
+
+6. 書込みが終わったらPCから外して完了

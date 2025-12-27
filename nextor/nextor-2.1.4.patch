@@ -1,0 +1,63 @@
+diff -ru Nextor-2.1.4.ORG/source/kernel/bank1/mapinit.mac Nextor-2.1.4/source/kernel/bank1/mapinit.mac
+--- Nextor-2.1.4.ORG/source/kernel/bank1/mapinit.mac	2025-12-27 12:42:51.123991500 +0900
++++ Nextor-2.1.4/source/kernel/bank1/mapinit.mac	2025-12-27 12:42:51.124375000 +0900
+@@ -141,11 +141,11 @@
+ if (BUILTIN AND STURBO)
+ ;;if 1 ;;HYBRID
+ ;===== end mod DOS2.50
+-		ld	b,a
+-		ld	a,(MSXVER)
+-		cp	3
+-		ld	a,b
+-		jr	nz,NOTR2
++		;ld	b,a
++		;ld	a,(MSXVER)
++		;cp	3
++		;ld	a,b
++		;jr	nz,NOTR2
+ 		ld	b,a
+ 		ld	a,(BOOTKEYS##)
+ 		and	00010000b   ;4 key pressed?
+@@ -188,11 +188,11 @@
+ 		ld	a,6
+ 		jr	nz,SYSSEGSCOUNT
+ 
+-		ld	a,(MSXVER)
+-		cp	3
++		;ld	a,(MSXVER)
++		;cp	3
+ 		ld	a,6+4
+-		jr	z,SYSSEGSCOUNT
+-		ld	a,6
++		;jr	z,SYSSEGSCOUNT
++		;ld	a,6
+ SYSSEGSCOUNT:
+ 		ld	(hl),a
+ 
+@@ -238,9 +238,9 @@
+ ;;if 1 ;;HYBRID
+ ;===== end mod DOS2.50
+ 
+-		ld	a,(MSXVER)
+-		cp	3
+-		jr	nz,NOTURBOR
++		;ld	a,(MSXVER)
++		;cp	3
++		;jr	nz,NOTURBOR
+ 
+ 		;ld	d,a
+ 		ld	a,(BOOTKEYS##)
+@@ -332,10 +332,10 @@
+ ;
+ 		push	bc
+ 		ld	c,a			;If this mapper has more RAM
+-		ld	a,(MSXVER)
+-		cp	3
++		;ld	a,(MSXVER)
++		;cp	3
+ 		ld	a,(hl)			; than current primary one then
+-		jr	nz,NO_PRIM_INTERNAL
++		;jr	nz,NO_PRIM_INTERNAL
+ 
+ 		ld	d,a
+ 		ld	a,(BOOTKEYS##)

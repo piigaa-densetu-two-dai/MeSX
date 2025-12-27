@@ -16,6 +16,12 @@ RAM マッパーメモリー384KB
 カートリッジスロット 基本スロットx2
 ATARIポート x2
 
+ビデオ機能にpico9918(great!)を使用しています。
+https://github.com/visrealm/pico9918
+
+音声機能にemu2149(great!)を使用しています。
+https://github.com/digital-sound-antiques/emu2149
+
 MSXπシリーズとの互換性について
 
 MSX交響楽団を含め、各機能概ね大丈夫だと思います。
